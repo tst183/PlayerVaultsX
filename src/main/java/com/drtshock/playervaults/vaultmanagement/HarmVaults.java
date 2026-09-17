@@ -2,7 +2,6 @@ package com.drtshock.playervaults.vaultmanagement;
 
 import org.bukkit.OfflinePlayer;
 
-import javax.annotation.Nullable;
 import java.util.UUID;
 import java.util.function.Function;
 
@@ -19,7 +18,7 @@ public final class HarmVaults {
         return getRows(player.getUniqueId());
     }
 
-    public static @Nullable Integer getRowsForMenu(int unlockedRows, int menuNumber) {
+    public static Integer getRowsForMenu(int unlockedRows, int menuNumber) {
         int startIndex = (menuNumber - 1) * 6;
 
         if (unlockedRows <= startIndex) {
